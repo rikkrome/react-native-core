@@ -1,0 +1,22 @@
+{
+  "name": "react-native-core-example",
+  "displayName": "Core Example",
+  "expo": {
+    "name": "react-native-core-example",
+    "slug": "react-native-core-example",
+    "description": "Example app for react-native-core",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
