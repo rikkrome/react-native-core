@@ -2,41 +2,31 @@
   "name": "@romerorickyio/react-native-core",
   "version": "0.1.0",
   "description": "react native core",
-  "main": "lib/commonjs/index",
-  "module": "lib/module/index",
-  "types": "lib/typescript/index.d.ts",
-  "react-native": "src/index",
-  "source": "src/index",
-  "files": [
-    "src",
-    "lib",
-    "android",
-    "ios",
-    "cpp",
-    "react-native-core.podspec",
-    "!lib/typescript/example",
-    "!android/build",
-    "!ios/build",
-    "!**/__tests__",
-    "!**/__fixtures__",
-    "!**/__mocks__"
-  ],
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "example"
+    ]
+  },
   "scripts": {
     "test": "jest",
-    "typescript": "tsc --noEmit",
+    "typescript": "tsc --noEmit --composite false",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build",
-    "release": "release-it",
+    "prerelease": "lerna run clean",
+    "release": "lerna publish",
     "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "pods": "cd example && pod-install --quiet"
   },
   "keywords": [
     "react-native",
     "ios",
     "android"
   ],
-  "repository": "git@github.com:romerorickyio/react-native-core.git",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:romerorickyio/react-native-core.git"
+  },
   "author": "ricky romero <contact@romeroricky.com> (https://github.com/romerorickyio)",
   "license": "MIT",
   "bugs": {
@@ -56,6 +46,7 @@
     "eslint-plugin-prettier": "^3.1.3",
     "husky": "^6.0.0",
     "jest": "^26.0.1",
+    "lerna": "^4.0.0",
     "pod-install": "^0.1.0",
     "prettier": "^2.0.5",
     "react": "16.13.1",
@@ -79,23 +70,6 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore: release ${version}",
-      "tagName": "v${version}"
-    },
-    "npm": {
-      "publish": true
-    },
-    "github": {
-      "release": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": "angular"
-      }
-    }
   },
   "eslintConfig": {
     "root": true,
@@ -126,19 +100,5 @@
     "tabWidth": 2,
     "trailingComma": "es5",
     "useTabs": false
-  },
-  "react-native-builder-bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      "commonjs",
-      "module",
-      [
-        "typescript",
-        {
-          "project": "tsconfig.build.json"
-        }
-      ]
-    ]
   }
 }
