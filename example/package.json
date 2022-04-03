@@ -1,5 +1,5 @@
 {
-  "name": "react-native-core-example",
+  "name": "@react-native-core/example",
   "description": "Example app for react-native-core",
   "version": "0.0.1",
   "private": true,
@@ -23,8 +23,11 @@
   "devDependencies": {
     "@babel/core": "~7.9.0",
     "@babel/runtime": "^7.9.6",
+    "@types/react": "^17.0.43",
+    "@types/react-native": "^0.67.3",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-preset-expo": "8.3.0",
-    "expo-cli": "^4.0.13"
+    "expo-cli": "^4.0.13",
+    "typescript": "^4.6.3"
   }
 }
