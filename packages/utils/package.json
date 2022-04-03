@@ -2,10 +2,48 @@
   "name": "@react-native-core/utils",
   "version": "0.1.0",
   "description": "react native core utils",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "author": "ricky romero <contact@romeroricky.com> (https://github.com/romerorickyio)",
+  "react-native": "src/index.ts",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:romerorickyio/react-native-core.git",
+    "directory": "packages/utils"
   },
-  "author": "",
-  "license": "ISC"
+  "bugs": {
+    "url": "https://github.com/romerorickyio/react-native-core/issues"
+  },
+  "homepage": "https://github.com/romerorickyio/react-native-core#readme",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "prepare": "bob build"
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.43",
+    "react": "^18.0.0",
+    "react-native-builder-bob": "^0.18.2",
+    "typescript": "^4.6.3"
+  }
 }
