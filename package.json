@@ -1,5 +1,5 @@
 {
-  "name": "react-native-core",
+  "name": "@romerorickyio/react-native-core",
   "version": "0.1.0",
   "description": "react native core",
   "main": "lib/commonjs/index",
@@ -36,16 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/romerorickyio/react-native-core",
+  "repository": "git@github.com:romerorickyio/react-native-core.git",
   "author": "ricky romero <contact@romeroricky.com> (https://github.com/romerorickyio)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/romerorickyio/react-native-core/issues"
   },
   "homepage": "https://github.com/romerorickyio/react-native-core#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "devDependencies": {
     "@commitlint/config-conventional": "^11.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
