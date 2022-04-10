@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { useCountRenders } from '@react-native-core/utils';
+import { useCountRenders } from '@romerorickyio/react-native-core-utils';
 
 export default function App() {
   useCountRenders('App.js');

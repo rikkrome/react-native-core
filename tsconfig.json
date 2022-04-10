@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@react-native-core/*": ["./packages/*/src"]
+      "@romerorickyio/*": ["./packages/*/src"]
     },
     "composite": true,
     "allowUnreachableCode": false,

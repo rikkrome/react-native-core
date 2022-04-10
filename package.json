@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/romerorickyio/react-native-core#readme",
   "dependencies": {
+    "@react-native-community/eslint-config": "^3.0.1",
     "react": "16.13.1"
   },
   "devDependencies": {
