@@ -1,7 +1,7 @@
 {
   "name": "@react-native-core/example",
   "description": "Example app for react-native-core",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@romerorickyio/react-native-core-utils": "^0.1.2",
+    "@romerorickyio/react-native-core-utils": "^0.1.3",
     "expo": "^42.0.0",
     "expo-splash-screen": "~0.11.2",
     "react": "16.13.1",
