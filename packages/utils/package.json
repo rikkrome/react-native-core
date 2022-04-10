@@ -1,6 +1,6 @@
 {
   "name": "@romerorickyio/react-native-core-utils",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "react native core utils",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
