@@ -4,7 +4,7 @@ import { StyleSheet, View, Text } from 'react-native';
 import { useCountRenders } from '@romerorickyio/react-native-core-utils';
 
 export default function App() {
-  useCountRenders('App.js');
+  useCountRenders('App.js.');
 
   return (
     <View style={styles.container}>
