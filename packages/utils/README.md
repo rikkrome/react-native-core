@@ -2,7 +2,7 @@
 
 ## Overview
 
-`@core/utils` are shareable utils such as helper functions and hooks.
+`@core-utils` are shareable utils such as helper functions and hooks.
 
 ### How to use
 
