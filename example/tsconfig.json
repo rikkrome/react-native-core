@@ -1,6 +1,5 @@
 {
   "extends": "../tsconfig",
   "references": [{ "path": "../packages/utils" }],
-  "compilerOptions": {},
-  "exclude": ["lib"]
+  "compilerOptions": {}
 }

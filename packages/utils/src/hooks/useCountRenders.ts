@@ -7,6 +7,7 @@
 import { useRef } from 'react';
 
 const useCountRenders = (name: string): void => {
+  console.log('useCountRenders running...', typeof useRef);
   const renders = useRef(0);
   let _current = renders.current;
   _current += 1;

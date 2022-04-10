@@ -3,7 +3,7 @@
   "description": "Example app for react-native-core",
   "version": "0.0.1",
   "private": true,
-  "main": "index",
+  "main": "index.js",
   "scripts": {
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -12,6 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-core/utils": "*",
     "expo": "^42.0.0",
     "expo-splash-screen": "~0.11.2",
     "react": "16.13.1",
